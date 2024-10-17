@@ -1,0 +1,135 @@
+html {
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+header {
+    margin-top: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding-bottom: 1em;
+    font-weight: lighter;
+}
+
+header {
+    height: 60px;
+    width: inherit;
+    top: 0;
+    font-size: 1.2em;
+    color: #191501;
+    position: fixed;
+    z-index: 200;
+}
+
+
+a {
+    text-decoration: none;
+    color: #B3B3B3;
+}
+
+
+#logo {
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+    height: 50px;
+    width: 50px;
+    padding: 4px;
+    margin-left: 3vw;
+}
+
+
+#home-page-about {
+    /*position: relative;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+#about-page-about {
+    /*position: relative;*/
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.home-about-heading-div {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /*position: absolute;*/
+    text-align: center;
+}
+
+.home-sections-headings {
+    text-align: center;
+    font-family: 'Abhaya Libre', serif;
+    letter-spacing: 0.25em;
+    font-size: 1.5em;
+}
+
+.colours-light-background {
+    color: #613405;
+}
+
+.colours-dark-background {
+    color: #ed8b12;
+}
+
+.colours-red-background {
+    color: #fff;
+}
+
+.home-about-description {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    /*letter-spacing: 0.1em;*/
+    font-weight: bold;
+    font-size: 3.4em;
+    color: #F0F0F0;
+}
+
+.about-about-description {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #000;
+}
+
+.home-read-more {
+    font-family: 'Abhaya Libre', serif;
+    letter-spacing: 0.25em;
+    font-size: 1.5em;
+    margin: 50px;
+}
+
+.more-hover:hover {
+    border-bottom: 1px solid;
+}
