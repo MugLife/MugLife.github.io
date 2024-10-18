@@ -17,6 +17,16 @@
     <title>#MugLife</title>
     <!-- link to main stylesheet -->
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+                var file = 'views/' + $(this).data('include') + '.html'
+                $(this).load(file)
+            })
+        })
+    </script>
 </head>
 <header id="change">
     <a id='logo' class="link" href='/'>
@@ -24,8 +34,8 @@
     </a>
 </header>
 <body>
-    <div class="container">
-        <section id="home-page-about">
+<div class="container">
+    <section class="home-page-about">
         <div class="home-about-heading-div">
             <div class="home-sections-headings colours-dark-background">#MUGLIFE</div>
             <div class="home-about-description">
@@ -38,6 +48,34 @@
             </a>
         </div>
     </section>
-    </div>
+    <section class="duality home-page-section">
+        <div class="duality-card-one duality-card">
+            <div class="home-sections-headings colours-dark-background">Tea</div>
+            <div class="duality-project-item">
+                <div>
+                    <span class="duality-big-desc">Exploration of the popularity of tea based on origin of leaves</span>
+                    <div data-include="tea_origin_world_map"></div>
+                </div>
+            </div>
+        </div>
+        <div class="duality-card-two duality-card">
+            <div class="home-sections-headings colours-red-background">Coffee</div>
+            <div class="duality-project-item">
+                <div>
+                    <span class="duality-big-desc">Exploration of the popularity of coffee based on origin of beans</span>
+                    <div data-include="coffee_origin_world_map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-page-about">
+        <div class="home-about-heading-div">
+            <div class="home-sections-headings colours-dark-background">Sentiments of tea and coffee lovers</div>
+            <div class="home-about-description">
+                Tea > Coffee over time 🍃
+            </div>
+        </div>
+    </section>
+</div>
 </body>
 </html>
