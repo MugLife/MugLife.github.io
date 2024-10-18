@@ -168,6 +168,10 @@ a {
     color: #613405;
 }
 
+.duality-heading {
+    padding-top: 1em;
+}
+
 .proj-item, .duality-project-item {
     display: flex;
     flex-direction: row;
