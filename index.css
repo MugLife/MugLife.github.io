@@ -41,9 +41,31 @@ header {
 
 a {
     text-decoration: none;
-    color: #B3B3B3;
+    color: #ed8b12;
 }
 
+
+nav ul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 0;
+    float: right;
+    list-style: none;
+    font-weight: bold;
+    margin-right: 3vw;
+    margin-top: 3.5vh;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: #fff;
+    border-bottom: 1px solid;
+}
 
 #logo {
     float: left;
@@ -89,6 +111,12 @@ a {
     font-family: 'Abhaya Libre', serif;
     letter-spacing: 0.25em;
     font-size: 1.5em;
+}
+
+.keywords {
+    text-align: center;
+    font-family: 'Abhaya Libre', serif;
+    letter-spacing: 0.25em;
 }
 
 .colours-light-background {
@@ -202,7 +230,7 @@ a {
     border-bottom: 1px solid #C1C1C1;
 }
 
-.proj-big-desc, .duality-big-desc {
+.duality-big-desc {
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1em;
@@ -216,7 +244,7 @@ a {
     color: #fff
 }
 
-.proj-item div, .duality-project-item div {
+.duality-project-item div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,4 +253,28 @@ a {
 
 .duality-project-item {
     box-shadow: none
+}
+
+
+@media only screen and (max-width: 650px) {
+    body {
+        font-size: 16px;
+    }
+
+    .home-sections-headings {
+        font-size: 16px;
+    }
+
+    .home-read-more {
+        font-size: 16px;
+    }
+
+    .home-about-description, .keywords {
+        font-size: 24px;
+    }
+
+    .home-page-about, .duality-card {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
