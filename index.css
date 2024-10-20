@@ -4,7 +4,7 @@ html {
 }
 
 header {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 body {
@@ -36,12 +36,13 @@ header {
     color: #191501;
     position: fixed;
     z-index: 200;
+    background-color: #004aad;
 }
 
 
 a {
     text-decoration: none;
-    color: #ed8b12;
+    color: white;
 }
 
 
@@ -54,7 +55,7 @@ nav ul {
     list-style: none;
     font-weight: bold;
     margin-right: 3vw;
-    margin-top: 3.5vh;
+    /*margin-top: 3.5vh;*/
 }
 
 nav ul li {
@@ -74,8 +75,9 @@ nav a:hover {
     background-size: 40px 40px;
     height: 50px;
     width: 50px;
-    padding: 4px;
+    /*padding: 4px;*/
     margin-left: 3vw;
+    padding-top: 1vh;
 }
 
 
