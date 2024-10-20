@@ -45,8 +45,14 @@ a {
     color: white;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
 
 nav ul {
+    /* Make the markers disappear */
+    /*list-style-type: none;*/
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     letter-spacing: 1px;
@@ -59,8 +65,15 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    /* Puts the elements in a single line */
+    display: inline-flex;
+    margin: 0.3em 1em;
+
+}
+
+nav input[type="checkbox"],
+nav label {
+    display: none;
 }
 
 nav a:hover {
@@ -278,5 +291,53 @@ nav a:hover {
     .home-page-about, .duality-card {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 1500px) {
+    input[type="checkbox"]:not(:checked) + ul {
+        display: none;
+    }
+
+    header {
+        background-color: #004aad;
+        font-size: 1em;
+    }
+
+    nav {
+        background-color: #004aad;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav label {
+        text-align: right;
+        display: block;
+        padding: 1.5em 1em .5em;
+        line-height: 1.6em;
+        align-self: center;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        letter-spacing: 1px;
+        margin-right: 3vw;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul:last-child {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding: 0.5em;
     }
 }
