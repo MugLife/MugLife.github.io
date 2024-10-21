@@ -191,6 +191,12 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
+.duality-img {
+    object-fit: contain;
+    width: 80%;
+    height: 80%;
+}
+
 .duality-card {
     flex: 1 0 50%;
     height: 100vh;
